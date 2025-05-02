@@ -1,1 +1,28 @@
-Unnamed repository; edit this file 'description' to name the repository.
+especies = [
+    {
+        "nombre": "Cacatúa Blanca",
+        "vida_promedio": 60,
+        "tipo": "Ave"
+    },
+    {
+        "nombre": "Boa Constrictor",
+        "vida_promedio": 25,
+        "tipo": "Reptil"
+    },
+    {
+        "nombre": "Tití Dorado",
+        "vida_promedio": 20,
+        "tipo": "Mamífero"
+    },
+    {
+        "nombre": "Guacamaya Roja",
+        "vida_promedio": 50,
+        "tipo": "Ave"
+    }
+]
+
+for especie in especies:
+    print(f"Nombre: {especie['nombre']}")
+    print(f"Vida promedio: {especie['vida_promedio']} años")
+    print(f"Tipo: {especie['tipo']}")
+    print("-" * 30)Unnamed repository; edit this file 'description' to name the repository.
