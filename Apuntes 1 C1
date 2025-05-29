@@ -21,6 +21,10 @@ CADA UNA LA INICIAL PAOALA MALDONADO PM_cuenta ASI MISMO PM_CUENTA AHOROS
        3. MAIN
 
 
+PADRE = PM_CUENTA
+HIJA=PM_CUENTAAHORROS
+MAIN
+
 //////////////////////////////////////////////////////////////
 
 public class PM_Cuenta {
