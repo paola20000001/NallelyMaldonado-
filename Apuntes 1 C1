@@ -11,3 +11,37 @@ RETIRAR
                 SALIR 
 
 SALDO =
+
+
+//////////////////////////////////////////////////////////////
+
+public class Cuenta {
+    private double saldo;
+    private double tasaInteres;
+
+    public Cuenta(double saldoInicial, double tasaInteresAnual) {
+        this.saldo = saldoInicial;
+        this.tasaInteres = tasaInteresAnual;
+    }
+
+    public void depositar(double monto) {
+        saldo += monto;
+    }
+
+    public boolean retirar(double monto) {
+        if (monto <= saldo) {
+            saldo -= monto;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public double getTasaInteres() {
+        return tasaInteres;
+    }
+}
