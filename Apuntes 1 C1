@@ -23,13 +23,13 @@ CADA UNA LA INICIAL PAOALA MALDONADO PM_cuenta ASI MISMO PM_CUENTA AHOROS
 
 //////////////////////////////////////////////////////////////
 
-public class Cuenta {
-    private double saldo;
-    private double tasaInteres;
+public class PM_Cuenta {
+    protected double saldo;
+    protected double tasaInteres;
 
-    public Cuenta(double saldoInicial, double tasaInteresAnual) {
+    public PM_Cuenta(double saldoInicial, double tasa) {
         this.saldo = saldoInicial;
-        this.tasaInteres = tasaInteresAnual;
+        this.tasaInteres = tasa;
     }
 
     public void depositar(double monto) {
@@ -47,9 +47,5 @@ public class Cuenta {
 
     public double getSaldo() {
         return saldo;
-    }
-
-    public double getTasaInteres() {
-        return tasaInteres;
     }
 }
