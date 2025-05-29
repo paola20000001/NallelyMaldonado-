@@ -1,1 +1,23 @@
 Main 
+///////////////////////////////////
+
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("INGRESE SALDO INICIAL = $");
+        double saldo = sc.nextDouble();
+
+        System.out.print("INGRESE TASA DE INTERES ANUAL = ");
+        double tasa = sc.nextDouble();
+
+        Cuenta cuenta = new Cuenta(saldo, tasa);
+        MenuCuenta menu = new MenuCuenta(cuenta);
+        menu.mostrarMenu();
+
+        sc.close();
+    }
+}
